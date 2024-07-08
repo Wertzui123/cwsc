@@ -315,7 +315,6 @@ void cwsc_listen(cwsc_WebSocket* ws) {
         }
         CWSC_FREE(message.message);
         if (ws->sockfd == -1) {
-            printf("break due to close\n");
             break;
         }
     }
